@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'reusableCard.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'iconContent.dart';
 
 const reusableCardColor = Color(0xFF1D1E33);
 const bottomButtonColor = Color(0xFFEA1556);
+const maleIcon = FontAwesomeIcons.mars;
+const femaleIcon = FontAwesomeIcons.venus;
+const String male = 'Male';
+const String female = 'Female';
 
 class InputPage extends StatefulWidget {
   @override
@@ -23,9 +29,16 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 Expanded(
-                  child: ReusableCard(color: reusableCardColor,),
+                  child: ReusableCard(
+                    color: reusableCardColor,
+                    cardChild: IconContent(icon: maleIcon, text: male),
+                  ),
                 ),
-                Expanded(child: ReusableCard(color: reusableCardColor)),
+                Expanded(child: ReusableCard(
+                  color: reusableCardColor,
+                  cardChild: IconContent(icon: femaleIcon, text: female,),
+                  ),
+                ),
               ],
             ),
           ),
