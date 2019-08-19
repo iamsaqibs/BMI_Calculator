@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 const textStyle = TextStyle(
   color: Colors.white,
   fontSize: 18.0,
@@ -9,9 +8,8 @@ const textStyle = TextStyle(
 class IconContent extends StatelessWidget {
   final IconData icon;
   final String text;
-  IconContent(
-    {@required this.icon, @required this.text}
-  )
+
+  IconContent({this.icon, this.text});
 
   @override
   Widget build(BuildContext context) {
