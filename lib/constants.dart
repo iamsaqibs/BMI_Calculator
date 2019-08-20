@@ -23,3 +23,24 @@ const textStyle = TextStyle(
   color: Colors.white,
   fontSize: 12.0,
 );
+
+//Results Page
+const yourResult = TextStyle(
+  fontSize: 50.0,
+  fontWeight: FontWeight.bold,
+);
+
+const resultText = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);
+
+const bmiText = TextStyle(
+  fontSize: 100.0,
+  fontWeight: FontWeight.bold,
+);
+
+const remarks = TextStyle(
+  fontSize: 20.0,
+);

@@ -1,10 +1,10 @@
-import 'package:bmi_calculator/resultsPage.dart';
 import 'package:flutter/material.dart';
 import 'reusableCard.dart';
 import 'iconContent.dart';
 import 'constants.dart';
-import 'resultsPage.dart';
+import 'bottomButton.dart';
 import 'roundedIconButton.dart';
+import 'resultsPage.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -228,30 +228,15 @@ class _InputPageState extends State<InputPage> {
           //Third Row Ending
 
           //Fourth Row Starting
-          GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage()));
-            },
-            child: Container(
-              color: bottomButtonColor,
-              height: 50.0,
-              width: double.infinity,
-              margin: EdgeInsets.only(top: 10.0),
-              child: Center(
-                child: Text(
-                  'CALCULATE YOUR BMI',
-                  style: TextStyle(
-                    fontSize: 16.0,
-                  ),
-                ),
-              ),
-            ),
-          ),
+          BottomButton(text: 'CALCULATE YOUR BMI', navigate: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(),));
+          },),
           //Fourth Row Ending
         ],
       ),
     );
   }
 }
+
 
 
