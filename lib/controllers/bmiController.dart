@@ -32,7 +32,7 @@ class BMIController {
     if(bmi >= 25){
       return 'You\'re Overweight! Do you even lift bruh?';
     } else if (bmi < 25 && bmi >= 18.5){
-      return 'You\'re Normal. Stop putting your simptoms on google!';
+      return 'You\'re Normal. Stop putting your symptoms on google!';
     } else if (bmi < 18.5 && bmi >= 16){
       return 'You\'re Underweight! GO TO YOUR GRANDMA!';
     } else if (bmi < 16 && bmi >= 15){
